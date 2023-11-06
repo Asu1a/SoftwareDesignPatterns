@@ -51,6 +51,6 @@ We have mobs such as __snake__ and __spider__ in our game and to spawn them we'r
 
 ## UML-Diagram
 
-<img src="UML-Diagram.jpg" alt="UML-Diagram">
+<img src="UML-Diagram.png" alt="UML-Diagram">
 
 ## _Thanks for reading_
