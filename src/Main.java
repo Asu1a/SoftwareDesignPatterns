@@ -2,15 +2,16 @@ import AdapterPattern.M_Wind;
 import AdapterPattern.Weapon_Adapter;
 import DecoratorPattern.E_Fire;
 import DecoratorPattern.E_Speed;
+import FactoryMethodPattern.Mobs;
+import FactoryMethodPattern.MobsFactory;
 import ObserverPattern.Game;
 import SingletonPattern.ServerStatus;
-import StrategyPattern.BowBehavior;
 import StrategyPattern.SwordBehavior;
 
 public class Main {
     public static void main(String[] args) {
         Game game = new Game();
-        //FACTORY
+
         Characters demon = new Demon(game, "Shoko_O");
         demon.setWeaponBehavior(new SwordBehavior());
 
@@ -36,8 +37,12 @@ public class Main {
         serverStatus.showStatus();
         System.out.println("----------------------------");
 
-
         orc.performFight();
 
+
+        //FACTORY
+        MobsFactory mobsFactory = new MobsFactory();
+        Mobs snake = mobsFactory.createMob("snake");
+        snake.attack();
     }
 }
