@@ -1,8 +1,15 @@
 # Software Design Patterns | FINAL PROJECT
 ### _made by Sultan Abdukarimov and Ualikhan Kamarov | SE-2211_
-_Link to github: #_
+_Link to github: https://github.com/Asu1a/SoftwareDesignPatterns.git_
 
-Our project contains 6 design patterns: __adapter, decorator, observer, singleton, strategy and factory__.
+## Main info
+
+Our project is a template of online game. In our work we tried to implement 6 software design patterns.
+Thanks to these patterns and methods we can add some details and in-game mechanics like __server status, enemies, notifications, status effects, physical/magic power__.
+We have four starter races: __Elf, Orc, Demon and Troll__.
+Also, we're using __Characters__ class as base for every player hero.
+
+## Our project contains 6 design patterns: __adapter, decorator, observer, singleton, strategy and factory__.
 
 ## Adapter:
 
@@ -38,6 +45,12 @@ In our game player can hold only one weapon (axe, bow and etc.) and using Strate
 
 ## Factory:
 
+Consist of __MobsFactory__ (main class), __Mobs__ interface for mobs,  __F_Snake__ and __F_Spider__ classes.
 
+We have mobs such as __snake__ and __spider__ in our game and to spawn them we're using factory method.
+
+## UML-Diagram
+
+<img src="UML-Diagram.jpg" alt="UML-Diagram">
 
 ## _Thanks for reading_
